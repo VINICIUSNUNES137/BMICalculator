@@ -24,11 +24,24 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.compose.ui.unit.sp
+import br.senai.sp.jandira.bmicalculator.model.Client
+import br.senai.sp.jandira.bmicalculator.model.Product
 import br.senai.sp.jandira.bmicalculator.ui.theme.BMICalculatorTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        val p1 = Product()
+        p1.id = 100
+        p1.productName = "mouse"
+
+        val c1 = Client(
+            salary = 1500.0,
+            name = "pedro",
+            id = 100
+        )
+
         setContent {
             BMICalculatorTheme {
                 CalculatorScreen()
@@ -45,7 +58,6 @@ fun CalculatorScreen() {
         Column(
             modifier = Modifier
                 .fillMaxSize()
-                .padding(32.dp)
         ) {
             // HEADER
             Column(
@@ -92,19 +104,30 @@ fun CalculatorScreen() {
                 )
                 Spacer(modifier = Modifier.height(48.dp))
                 Button(onClick = { /*TODO*/ }, modifier = Modifier
-                    .fillMaxWidth(),
+                    .fillMaxWidth().padding(bottom = 32.dp),
                     shape = RoundedCornerShape(24.dp)
                     ) {
                     Text(text = stringResource(id = R.string.button_calculate),
                     modifier = Modifier.padding(8.dp),
                     )
 
-                }
+                    }
             }
 
             // FOOTER
             Column() {
+                Card(
+                   modifier =   Modifier
+                        .fillMaxSize(),
+                    backgroundColor = Color(
+                        red = 79,
+                        green =  54,
+                        blue = 232
+                    )
+                ) {
 
+
+                }
             }
         }
     }
