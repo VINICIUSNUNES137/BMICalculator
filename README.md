@@ -1,9 +1,8 @@
 # CALCULADORA IMC
-<center>
   
-|                    MOBILE                  |
-| :----------------------------------------- | 
-| <a href="#"><img heigth="400" src="./app/src/main/res/drawable/bmiCalc.png"/></a> |
+|                    HOME                  |                   CALCULO                  |
+| :----------------------------------------- | :----------------------------------------- | 
+| <a href="#"><img heigth="500" src="./app/src/main/res/drawable/bmiCalc.png"/></a> | <a href="#"><img heigth="500" src="./app/src/main/res/drawable/bmiCalc.png"/></a> |
 
  
   
