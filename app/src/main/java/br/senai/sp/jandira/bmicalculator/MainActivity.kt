@@ -1,5 +1,6 @@
 package br.senai.sp.jandira.bmicalculator
 
+import android.content.Intent
 import br.senai.sp.jandira.bmicalculator.R
 import android.os.Bundle
 import android.util.Log
@@ -81,6 +82,7 @@ fun CalculatorScreen() {
     }
 
     val context = LocalContext.current.applicationContext
+    val context2 = LocalContext.current
 
     Surface(modifier = Modifier.fillMaxSize()) {
         Column(
@@ -209,7 +211,11 @@ fun CalculatorScreen() {
                                 Text(text = stringResource(id = R.string.reset))
                             }
                             Spacer(modifier = Modifier.width(24.dp))
-                            Button(onClick = { /*TODO*/ }) {
+                            Button(onClick = { /*TODO*/
+
+                                val openOther = Intent(context2, SignUpActivity::class.java)
+                                context2.startActivity(openOther)
+                            }) {
                                 Text(text = stringResource(id = R.string.share))
                             }
                         }
