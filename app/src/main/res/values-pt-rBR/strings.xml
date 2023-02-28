@@ -11,7 +11,7 @@
     <string name="ideal_state">Congratulations! Your weight is ideal!</string>
     <string name="underweight">Abaixo do peso</string>
     <string name="normal_weight">Peso ideal</string>
-    <string name="over_weight">Obsedidade grau I</string>
-    <string name="obesity">Obsedidade grau II</string>
-    <string name="morbid_obesity">Obsedidade Mórbida grau III</string>
+    <string name="over_weight">Obesidade grau I</string>
+    <string name="obesity">Obesidade grau II</string>
+    <string name="morbid_obesity">Obesidade Mórbida grau III</string>
 </resources>
